@@ -5,11 +5,12 @@
 }
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
 }
 .wrapper{
     width: 100vw;
     height: 100vh;
-    background-color: blue;
+    background-color: rgb(103, 192, 185);
     color: white;
 }
 .brand{
@@ -17,7 +18,7 @@ body{
 }
 
 .brand span{
-    color: red;
+    color: rgb(173, 74, 74);
 
 }
 .navbar{
@@ -25,8 +26,8 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
-    background-color: #47289c; 
+    padding: 2rem;
+    background-color: gray; 
     z-index: 1;
 }
 .Menú{
@@ -37,6 +38,9 @@ body{
 }
 .Menú li{
     list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    
     
 }
 .Menú a{
@@ -46,11 +50,7 @@ body{
 .Menú .active{
     color: aqua;
 }
-.Menú a:hover{
-    background-color: aqua;
-    color:black;
-    transition: ease-in .4s;
-}
+
 .main{
     margin: 0 auto;
     width: 80vw;
@@ -65,7 +65,7 @@ h1{
     font-size: 3em;
 }
 span{
-    color: aqua;
+    color: rgb(173, 74, 74);
 }
 .download{
     padding: 10px 20px;
@@ -75,17 +75,15 @@ span{
     margin-top: 10px;
     cursor: pointer;
     box-shadow: 1px 3px 11px -5px rgba(102, 231,200, 600);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
 }
 .download:hover{
-    background-color: white;
+    background-color: aqua;
     box-shadow: none;  
 }
-.main img{
-    width: 300px;
-    height: 370px;
-    border: 7px solid aqua;
-    margin-left: 15px;
-}
+
 .about{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -95,7 +93,7 @@ span{
 }
 .about img{
     width: 80%;
-    margin-top: 10px;
+    
     grid-column: 1/5;
 }
 .about-info{
@@ -104,7 +102,7 @@ span{
 }
 .about-info h2{
     font-size: -7px;
-    color: #0f1f7a;
+    color: rgb(173, 74, 74);
 }
 .dividir{
     height: 4px;
@@ -119,7 +117,7 @@ span{
 .portfolio{
     width: 100vw;
     color: white;
-    background-color: blue;
+    background-color: rgb(103, 192, 185);
 
 }
 .portfolio-head{
@@ -133,19 +131,27 @@ span{
     font-size: 3em;
 
 }
+.portfolio-head h2 span{
+    color: rgb(173, 74, 74);;
+
+}
 .portfolio .container{
     width: 80vw;
     height: 80vh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    background-color: rgb(103, 192, 185);;
 }
 .card{
     width: 300px;
     color: white;
     height: 350px;
-    background-color: #47289c;
+    background-color: gray;
     margin: 1em;
+    border: 1px solid gray;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px;
 
 }
 .card_image1{
@@ -155,6 +161,8 @@ span{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 12px 12px 0px 0px;
+    box-shadow: 2px 2px 10px;
 
 }
 
@@ -165,6 +173,8 @@ span{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 12px 12px 0px 0px;
+    box-shadow: 2px 2px 10px;
     
 
 }
@@ -176,6 +186,8 @@ span{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 12px 12px 0px 0px;
+    box-shadow: 2px 2px 10px;
 }
 
 .card_image4{
@@ -185,11 +197,14 @@ span{
     background-size: cover;
     background-position: -80px;
     background-repeat: no-repeat;
+    border-radius: 12px 12px 0px 0px;
+    box-shadow: 2px 2px 10px;
     
 }
 .card_title{
     padding: 20px;
     text-align: center;
+    color: white;
 }
 .card .project-link{
     display: flex;
@@ -212,19 +227,31 @@ span{
     display: flex;
     justify-content: center;
 }
-.card .project-details a{
+.card{
     text-decoration: none;
     color: #191c32;
+}
 
+.project-details a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
 }
 .contact-section{
     background-color: white;
     border: 2px solid none;
 }
+.contact-head h2{
+    color: rgb(173, 74, 74);
+}
 .container-contact{
     padding: 3em;
     margin: 0 auto;
     background-color: white;
+}
+.contact-form{
+    color: rgb(173, 74, 74);
 }
 
 .container-contact button{
@@ -263,6 +290,8 @@ span{
     border: none;
     text-transform: uppercase;
     background-color: aqua;
+    font-size: 18px;
+    font-weight: 600;
     border-radius: 12px;
     cursor: pointer;
     box-shadow: 1px 3px 11px -5px rgba(102, 221,200, 600);
@@ -278,7 +307,7 @@ span{
     align-items: center;
     width: 100vw;
     height: 200px;
-    background-color: #47289c;
+    background-color: gray;
 }
 .footer-content h2{
     font-size: 2em;
